@@ -1,0 +1,20 @@
+
+<header>
+  
+  <nav class="navbar">
+    <div class="logo" style="color: var(--text-color)">
+      Lianne
+    </div>
+    <ul class="nav-links" style="color: var(--text-color)">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- Toggle Switch -->
+    <label class="switch">
+      <input type="checkbox" (change)="toggleTheme()" [checked]="theme === 'dark'">
+      <span class="slider round"></span>
+    </label>
+  </nav>
+</header>

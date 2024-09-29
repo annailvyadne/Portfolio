@@ -1,0 +1,31 @@
+/* Footer Styling */
+.footer {
+  background-color: #463f3a;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-family: "Playwrite DE Grund";
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #bcb8b1; /* Slight hover color effect */
+}
