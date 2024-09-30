@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import emailjs from 'emailjs-com';
 
 @Component({
   selector: 'app-home',
