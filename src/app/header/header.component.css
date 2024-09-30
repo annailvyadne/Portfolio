@@ -1,0 +1,155 @@
+/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+header {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Use space-between for logo and nav */
+  align-items: center;
+  height: 70px;
+  padding: 0 20px; /* Add padding for spacing */
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Playwrite DE Grund', sans-serif; /* Apply new font */
+  flex: 0; /* Allow logo to not take extra space */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Center the nav links */
+  flex: 1; /* Allow nav links to take available space */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: gray;
+  font-size: 28px; /* Adjusted font size */
+  transition: color 0.3s ease;
+  font-family: 'Playwrite DE Grund', sans-serif; /* Apply new font */
+}
+
+.nav-links a:hover {
+  color: #f4a261; /* Hover effect */
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+body.dark-mode {
+  --background-color: #181818;
+  --text-color: #f0f0f0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Optional: Style for the toggle button */
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* The switch - the container */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+/* The round slider (the circle part) */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/* When the checkbox is checked */
+input:checked + .slider {
+  background-color: #2196F3; /* Change to a color of your choice */
+}
+
+/* Move the slider to the right when checked */
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Optional - adding box shadow to make it more stylish */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

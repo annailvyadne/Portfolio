@@ -1,0 +1,21 @@
+/* Default light mode styles */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000; /* Black text for light mode */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  --background-color: #181818;
+  --text-color: #ffffff; /* White text for dark mode */
+}
+
+/* Apply the text color throughout the app */
+body, p, h1, h2, h3, h4, h5, h6, span, a, li {
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

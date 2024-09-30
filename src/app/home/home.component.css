@@ -1,0 +1,287 @@
+/* Background color for the main page */
+body {
+  background-color: #edede9;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* About Section Styles */
+.about-section {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Heading Styles */
+.about-section h2 {
+  font-size: 2.5rem;
+  color: #463f3a;
+  font-family: "Playwrite DE Grund";
+  margin-bottom: 20px;
+}
+
+/* Image Styles */
+.about-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #463f3a;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.about-image:hover {
+  transform: scale(1.1) rotate(-5deg); /* Increase size and rotate */
+}
+
+/* About Me Description */
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  padding: 0 20px;
+  font-family: "Playwrite DE Grund";
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.btn-resume {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #8a817c; /* Updated button color */
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Playwrite DE Grund";
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-resume:hover {
+  background-color: #726a65; /* Darken button on hover */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .about-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+  }
+
+  .about-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+
+
+/* Tech Stack Section */
+.tech-stack-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.tech-stack-section h2 {
+  font-size: 2.5rem;
+  color: #463f3a;
+  margin-bottom: 40px;
+  font-family: "Playwrite DE Grund";
+}
+
+/* Grid Container */
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+  gap: 1px; /* Small gap between items */
+  justify-items: center;
+}
+
+/* Each tech item */
+.tech-item {
+  text-align: center;
+  padding: 5px; /* Reduced padding for each item */
+  transition: transform 0.3s ease;
+}
+
+.tech-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 0px; /* Reduced margin under the image */
+  transition: transform 0.3s ease;
+}
+
+.tech-item:hover img {
+  transform: scale(1.1); /* Hover effect: Increase image size */
+}
+
+.tech-item p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 5px; /* Reduced margin between image and text */
+  font-family: "Playwrite DE Grund";
+}
+
+/* Responsive Grid */
+@media (max-width: 992px) {  /* For tablets and smaller screens */
+  .tech-stack-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) { /* For mobile devices */
+  .tech-stack-grid {
+    grid-template-columns: 1fr; /* 1 column per row */
+    gap: 15px;
+  }
+  
+  .tech-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .tech-item p {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* Portfolio Section */
+.portfolio-section {
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'Playwrite DE Grund', sans-serif;
+}
+
+.portfolio-section h2 {
+  font-size: 2.5rem;
+  color: #463f3a;
+  margin-bottom: 40px;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  gap: 30px; /* Reduced gap for tighter layout */
+  justify-items: center;
+}
+
+/* Card Styling */
+.card {
+  width: auto; /* Adapt the card width based on its content */
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Hover zoom effect */
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image Styling */
+.card-img-top {
+  width: 100%; /* Image takes the full width of the card */
+  height: auto; /* The height adjusts proportionally to the image */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Card Body Styling */
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #463f3a;
+}
+
+/* Card Text */
+.card-text {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Button Group */
+.btn-group {
+  display: flex;
+  justify-content: space-between; /* Horizontally aligned buttons */
+  gap: 10px; /* Space between the two buttons */
+}
+
+/* Button Styling */
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: white;
+  flex: 1; /* Ensure buttons are of equal width */
+}
+
+.btn-github {
+  background-color: #8a817c;
+}
+
+.btn-github:hover {
+  background-color: #726c68;
+}
+
+.btn-view {
+  background-color: #bcb8b1;
+}
+
+.btn-view:hover {
+  background-color: #a09d97;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) { /* For tablets and smaller screens */
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+  }
+}
+
+@media (max-width: 576px) { /* For mobile devices */
+  .portfolio-grid {
+    grid-template-columns: 1fr; /* 1 column per row */
+  }
+}
+
+
