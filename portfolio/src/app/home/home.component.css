@@ -47,6 +47,25 @@ body {
   margin: 0 auto;
 }
 
+.btn-resume {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #8a817c; /* Updated button color */
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Playwrite DE Grund";
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-resume:hover {
+  background-color: #726a65; /* Darken button on hover */
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-section h2 {
@@ -266,63 +285,3 @@ body {
 }
 
 
-.contact-section {
-  padding: 50px 20px;
-  font-family: 'Playwrite DE Grund', sans-serif;
-  max-width: 600px; /* Keep the limit for the form */
-  margin: auto; /* Center the form */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  background-color: white;
-}
-
-
-.contact-section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: black;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  color: black;
-  margin-left: 90px;
-  font-weight: bold;
-}
-
-.form-control {
-  width: 80%; /* Decrease the width to 80% */
-  max-width: 400px; /* Set a maximum width to prevent them from being too wide */
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: border-color 0.3s ease;
-  margin: auto; /* Center the inputs */
-  display: block; /* Ensure inputs are displayed as block elements */
-}
-
-.form-control:focus {
-  border-color: #2196F3; /* Change border color on focus */
-  outline: none; /* Remove default outline */
-}
-
-.btn-primary {
-  width: 80%;
-  margin-left: 70px;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  background-color: #2196F3; /* Primary button color */
-  color: black;
-  transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: #1976D2; /* Darken button on hover */
-}
